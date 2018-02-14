@@ -1,0 +1,25 @@
+{
+  "name": "ems-mean1",
+  "version": "1.0.0",
+  "description": "simple mean apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:coverage": "nyc --reporter=html --reporter=text mocha ./test/**/*.test.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chai": "^4.1.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "mongoose": "^4.10.8",
+    "nodeman": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai-http": "^3.0.0",
+    "mocha": "^5.0.1",
+    "nyc": "^11.4.1"
+  }
+}

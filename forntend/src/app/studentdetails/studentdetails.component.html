@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size:40px"></span>
+  <h2>Student details</h2>
+  <div class="container well" style="background-color:rgba(111, 245, 238, 0.842)">
+    <h5>
+      <hr>
+      <label>Student name: </label> {{student?.name}}
+      <br>
+      <label>Student college: </label> {{student?.college|uppercase}}
+      <br>
+      <hr>
+    </h5>
+  </div>
+  <button class="btn btn-success" [routerLink]="['/students']">Back to Students page</button>
+  <button class="btn btn-danger" (click)="delete(student._id)">Delete Student</button>
+  <button class="btn btn-danger" [routerLink]="['/student',student?._id]"> Student</button>
+
+</div>
+
+<hr>
